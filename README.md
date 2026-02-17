@@ -157,7 +157,7 @@ Together, they represent a full data lifecycle:
 ## Tools & Technologies
 
 - SQL  
-- MySQL  
+- PostgreSQL (target database for physical modeling) 
 - Relational data modeling  
 - ELT architecture concepts  
 
@@ -173,7 +173,21 @@ This project is intentionally designed for extension. Possible next steps includ
 - Performance considerations for large volumes  
 
 ---
+## Golden Path
 
+If you want to understand this project in the intended order, follow this path:
+
+1. Read this README to understand the project goals and scope.
+2. Understand the Orders domain  
+   → docs/conceptual/orders.md
+3. Review the logical data model  
+   → docs/logical/orders.md
+4. Inspect the physical schema  
+   → docs/physical/orders.sql
+5. Follow the data flow and pipeline behavior  
+   → logical_data_flow.md
+
+---
 ## Notes
 
 This repository is part of my professional preparation for an entry-level role in Data Engineering, with a strong emphasis on data modeling, data correctness, and system design, built through self-directed study and practical implementation.
